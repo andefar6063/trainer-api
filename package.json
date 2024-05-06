@@ -1,0 +1,24 @@
+{
+  "name": "trainer-api",
+  "version": "1.0.0",
+  "description": "API for the trainer chat bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andefar6063/trainer-api.git"
+  },
+  "author": "Anton Sønderskov Kristensen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andefar6063/trainer-api/issues"
+  },
+  "homepage": "https://github.com/andefar6063/trainer-api#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "openai": "^4.41.0"
+  }
+}
