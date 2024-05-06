@@ -44,12 +44,12 @@ exports.userMessage = async (req, res) => {
 
 //Run client
 exports.runClient = async (req, res) => {
-    const { threadID, assistant_id } = req.body;
+    const { threadID } = req.body;
     try {
         let run = await client.beta.threads.runs.createAndPoll(
             threadID,
             {
-                assistant_id: assistant_id,
+                assistant_id: process.env.ASSISTANT_ID,
             }
         );
 
